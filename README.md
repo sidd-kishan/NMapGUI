@@ -69,5 +69,9 @@ For the moment, you will have to execute the jar file. If you have java properly
 `nohup java -jar nmapGUI-0.6.1-snapshot.jar $`   
 
 as it will let you close the console and still use the app.
-
+Jar Building Steps on Rasberry pi 4:-
+`cd NMapGUI-master\`
+`mvn package`
+If tests fail on rasberry pi4 try:-
+`mvn package -Dmaven.test.skip=true`
 Visit [our wiki](https://github.com/danicuestasuarez/NMapGUI/wiki/Using-NMapGUI) to find out how to use NMapGUI
